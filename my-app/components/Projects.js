@@ -16,37 +16,37 @@ const Projects = () => {
         <h2 className='py-4'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
-            title='Property Finder'
+            title='Whitelist dApp for NFT Collection'
             backgroundImg={Whitelist}
             projectUrl='/property'
-            tech='React JS'
+            tech='Next JS, React Js, Hardhat, Solidity'
           />
           <ProjectItem
-            title='Crypto App'
+            title='NFT Collection'
             backgroundImg={NFTCollection}
             projectUrl='/crypto'
-            tech='React JS'
+            tech='Next JS, React Js, Hardhat, Solidity'
 
           />
           <ProjectItem
-            title='Netflix App'
+            title='Initial Coin Offering (ICO)'
             backgroundImg={InitialCoin}
             projectUrl='/netflix'
-            tech='React JS'
+            tech='Next JS, React Js, Hardhat, Solidity'
 
           />
           <ProjectItem
-            title='Twitch UI'
+            title='Decentralized Exchange'
             backgroundImg={dExchange}
             projectUrl='/twitch'
-            tech='Next JS'
+            tech='Next JS, React Js, Hardhat, Solidity'
 
           />
           <ProjectItem
-            title='Twitch UI'
+            title='DAO for NFT holders'
             backgroundImg={DAO}
             projectUrl='/twitch'
-            tech='Next JS'
+            tech='Next JS, React Js, Hardhat, Solidity'
 
           />
         </div>

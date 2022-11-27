@@ -34,7 +34,7 @@ const Skills = () => {
          <SubSkills skill={Github} skillName='GIT & GITHUB' />
          <SubSkills skill={Solidity} skillName='SOLIDITY' />
          <SubSkills skill={Hardhat} skillName='HARDHAT' />
-         <SubSkills skill={Ethereum } skillName='ETHEREUM & BLOCKCHAIN' />
+         <SubSkills skill={Ethereum } skillName='SMART CONTRACT & BLOCKCHAIN' />
         </div>
       </div>
     </div>
