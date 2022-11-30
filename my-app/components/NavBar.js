@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/logos/logo3.png'
 
 const Navbar = () => {
@@ -12,23 +12,20 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
+  const router = useRouter();
 
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
+  useEffect(() => {
+    if (
+      router.asPath === '/whitelist' ||
+      router.asPath === '/nftcollection'
+    ) {
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
+    } else {
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2937');
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -55,8 +52,7 @@ const Navbar = () => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/' legacyBehavior>
-          <a>
+        <Link href='/'>
             <Image
               src={NavLogo}
               alt='/'
@@ -64,7 +60,6 @@ const Navbar = () => {
               height='100'
               className='cursor-pointer'
             />
-          </a>
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
@@ -81,7 +76,12 @@ const Navbar = () => {
               <Link href='/#projects'>Projects</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
+              <Link href='/OBINNA FRANKLIN DURU - Curriculum Vitae.pdf'
+              target='_blank'
+              rel='noreferrer'
+              >
+                Resume
+              </Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#contact'>Contact</Link>
@@ -115,15 +115,13 @@ const Navbar = () => {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Link href='/' legacyBehavior>
-                <a>
+              <Link href='/'>
                   <Image
                     src={NavLogo}
                     width='100'
                     height='100'
                     alt='/'
                   />
-                </a>
               </Link>
               <div
                 onClick={handleNav}
@@ -160,7 +158,10 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link href='/resume'>
+              <Link href='/OBINNA FRANKLIN DURU - Curriculum Vitae.pdf'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <li onClick={() => setNav(false)} className='py-2 text-sm'>
                   Resume
                 </li>
@@ -203,7 +204,10 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href='/resume'>
+                <Link href='/OBINNA FRANKLIN DURU - Curriculum Vitae.pdf'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'

@@ -17,8 +17,7 @@ const Main = () => {
           </h1>
           <h1 className='py-2 text-gray-700'>An Aspiring Blockchain and Full-Stack Software Developer.</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-            I&#39;m focused on building responsive front-end web applications
-            integrating back-end technologies.
+            I&#39;m focused on building Front-end Web development, Blockchain, Smart Contract, and use cases such as NFTs, Defi, and DAOs..
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
@@ -44,7 +43,10 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href='/resume'>
+            <Link href='/OBINNA FRANKLIN DURU - Curriculum Vitae.pdf'
+              target='_blank'
+              rel='noreferrer'
+            >
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsFillPersonLinesFill />
               </div>
