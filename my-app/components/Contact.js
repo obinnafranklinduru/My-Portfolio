@@ -42,7 +42,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className='py-2'>Obinna Franklin Duru</h2>
-                <p>An Aspiring Blockchain</p>
+                <p>An Aspirant Blockchain</p>
                 <p className='py-4'>
                   I am available for freelance or full-time positions. Contact
                   me and let&apos;s talk.
