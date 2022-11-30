@@ -15,7 +15,7 @@ const About = () => {
           <p className='py-2 text-gray-600'>
             Communication Blockchain developer with hands-on experience with Front-end Web development, Blockchain, Smart Contract, and use cases such as NFTs, Defi, and DAOs. Experience writing code from scratch Thrive in environments where innovation and experimentation are encouraged, owning deadlines and striving for efficiency. Interested in exploring new ideas and providing new inspiration and thought-provoking concepts, possess experience in teamwork, problem-solving, and communication.
           </p>
-          <p className='py-2 text-gray-600'>
+          <div className='py-2 text-gray-600'>
             Open to work for the following:
             <ul>
               <li>Blockchain Developer (DApps) Intern/Entry-Level</li>
@@ -24,7 +24,7 @@ const About = () => {
               <li>JavaScript Developer</li>
               <li>Front-end Developer</li>
             </ul>
-          </p>
+          </div>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer hover:text-gray-900'>
               Check out some of my latest projects.
