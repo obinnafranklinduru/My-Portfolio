@@ -16,7 +16,7 @@ const Meta = ({ title, keywords, description }) => {
 Meta.defaultProps = {
   title: 'Obinna Franklin Duru',
   keywords: 'Blockchain Developer, Dapp Developer, NFTs Developer, Web Developer',
-  description: 'A top-notch Blockchain Developer, Smart Contract Developer, and Web Developer.',
+  description: 'Blockchain Developer, Smart Contract Developer, and Web Developer.',
 }
 
 export default Meta
