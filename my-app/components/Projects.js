@@ -1,6 +1,7 @@
 import React from 'react';
 import NFTCollection from '../public/assets/projects/NFT Collection.png'
 import Whitelist from '../public/assets/projects/Whitelist.png'
+import ICO from '../public/assets/projects/ICO.png'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -22,6 +23,12 @@ const Projects = () => {
             title='NFT Collection'
             backgroundImg={NFTCollection}
             projectUrl='/nftcollection'
+            tech='Next JS, React Js, Hardhat, Solidity'
+          />
+          <ProjectItem
+            title='Initial Coin Offering'
+            backgroundImg={ICO}
+            projectUrl='/ico'
             tech='Next JS, React Js, Hardhat, Solidity'
           />
         </div>
